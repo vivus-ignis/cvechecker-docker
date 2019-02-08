@@ -1,0 +1,11 @@
+--- conf/cvechecker.conf.in.orig	2019-01-15 16:08:32.147799823 +0100
++++ conf/cvechecker.conf.in	2019-01-15 16:08:48.200930039 +0100
+@@ -6,7 +6,7 @@
+ #dbtype="mysql";
+ cvecache = "@localstatedir@/cvechecker/cache";
+ datadir = "@pkgdatadir@";
+-stringcmd = "/usr/bin/strings -n 3 '@file@'";
++stringcmd = "/opt/cvechecker/embedded/bin/strings -n 3 '@file@'";
+ version_url = "https://raw.github.com/sjvermeu/cvechecker/master/versions.dat";
+ #userkey = "servertag";
+ 
